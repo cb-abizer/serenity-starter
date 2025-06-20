@@ -8,6 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
     features = {"src/test/resources/features"},
     plugin = {"json:target/cucumber-parallel/1.json"},
+    tags = "@P1",
     glue = {"cb.stepdefinitions"}
 )
 public class ExampleSiteTestSuite {
